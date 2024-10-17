@@ -1,0 +1,84 @@
+/* 전체 페이지 배경색 */
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Pretendard-Regular', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 헤더 스타일 */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+/* 헤더 내부 콘텐츠 스타일 */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    padding: 10px 0;
+}
+
+/* 로고 스타일 */
+.logo {
+    width: 6vw;
+    height: auto;
+}
+
+.text1, .text2 {
+    margin: 0 37vw;
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-size: 1vw;
+    text-align: center;
+}
+
+main {
+    width: calc(100% - 10vw);
+    max-width: 1200px;
+}
+
+/* 극장 제목 스타일 */
+.theater-title {
+    margin-left: -3vw;
+}
+
+/* 비디오 컨테이너 */
+.video-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px; /* 위쪽 여백 추가 */
+}
+
+/* TV 프레임 스타일 */
+.tv-frame {
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 0; /* 정확한 위치 지정 */
+    width: 102%;
+    height: 102%;
+    border-radius: 10px;
+    z-index: 1;
+    box-sizing: border-box; /* 패딩 포함한 크기 계산 */
+}
+
+/* iframe 스타일 */
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box; /* 일관된 크기 계산 */
+    margin: 4px 0 0 0; /* 상단 여백 미세 조정 */
+}
