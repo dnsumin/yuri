@@ -7,37 +7,36 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden; /* 스크롤 제거 */
 }
 
-/* 헤더 스타일 */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
-    width: 100%;
+    height: 10vh; /* 뷰포트 높이의 15%로 설정 (기존보다 크게) */
+    width: 100%; /* 뷰포트 너비 전체 */
 }
 
-/* 헤더 내부 콘텐츠 스타일 */
 .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    padding: 10px 0;
-}
-
-/* 로고 스타일 */
-.logo {
-    width: 6vw;
-    height: auto;
+    width: 70%; /* 전체 너비의 90%로 설정 */
+    padding: 10px 0; /* 상하 여백 추가 */
 }
 
 .text1, .text2 {
     margin: 0 37vw;
     font-family: 'Pretendard-Regular', sans-serif;
-    font-size: 1vw;
+    font-size: 1vw; /* 뷰포트 너비 기준 텍스트 크기 */
     text-align: center;
+    color: white;
+}
+
+.logo {
+    width: 6vw; /* 로고 너비를 뷰포트 너비의 4%로 설정 (기존보다 작게) */
+    height: auto; /* 높이를 비율에 맞게 조정 */
 }
 
 main {
@@ -47,8 +46,13 @@ main {
 
 /* 극장 제목 스타일 */
 .theater-title {
-    margin-left: -3vw;
+    white-space: nowrap; /* 줄바꿈 방지 */
+    color: white;
+    text-align: left; /* 좌측 정렬 추가 */
+    margin-left: 12vw; /* 왼쪽 여백 추가 (필요시 조정) */
+    width: 100%; /* 부모 요소의 전체 너비 사용 */
 }
+
 
 /* 비디오 컨테이너 */
 .video-container {
